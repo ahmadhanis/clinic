@@ -1,0 +1,697 @@
+/* Global setting for all html elements */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Garamond, serif;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    align-items: center;
+    height: 100%;
+}
+
+/* Header/logo Title */
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #0280b0;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+
+/* Style the top navigation bar */
+
+.topnavbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+/* Style the navigation bar links */
+
+.topnavbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+
+.topnavbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+
+.topnavbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnavbar .icon {
+    display: none;
+}
+
+/* Bottom navbar */
+
+.bottomnavbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottomnavbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+
+/* Change color on hover */
+
+.bottomnavbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.column-question {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.row-question {
+    margin: 0 -5px;
+}
+
+.row-question:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card-names {
+    text-align: center;
+    margin: 4px;
+    display: grid;
+}
+.card-visit {
+    text-align: center;
+    margin: 4px;
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+row-pages {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.imgselection {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+input[type=text], input[type=tel], input[type=password], input[type=number],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+        max-width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #0280b0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+}
+
+button[type=submit] {
+    background-color: #0280b0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=search] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #0280b0;
+}
+
+.container {
+    border-radius: 5px;
+    text-align: center;
+}
+
+.col-25 {
+    float: left;
+    width: 35%;
+    text-align: left;
+}
+
+.col-75 {
+    float: left;
+    width: 65%;
+    text-align: left;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#more {
+    display: none;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-single:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.column-card {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    padding: 1px;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+}
+
+.row-single {
+    padding: 1px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.card-header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2);
+    /* IE */
+    -moz-transform: scale(2);
+    /* FF */
+    -webkit-transform: scale(2);
+    /* Safari and Chrome */
+    -o-transform: scale(2);
+    /* Opera */
+    transform: scale(1.5);
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Might want to wrap a span around your checkbox text */
+
+.checkboxtext {
+    /* Checkbox text */
+    font-size: 50%;
+    display: inline;
+    background-color: #0280b0;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 55px;
+    right: 25px;
+    background-color: #0280b0;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+    border: 1px solid
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+    background-color: #0280b0;
+    color: white;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+   
+}
+
+.circular--portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 80%;
+}
+
+.circular--portrait img {
+    width: 50%;
+    height: auto;
+}
+
+.avatar {
+    vertical-align: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+}
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea {
+    font-family: Garamond, serif;
+}
+::-webkit-input-placeholder {
+    font-family: Garamond, serif;
+}
+:-moz-placeholder {
+    font-family: Garamond, serif;
+}
+::-moz-placeholder {
+    font-family: Garamond, serif;
+}
+:-ms-input-placeholder {
+    font-family: Garamond, serif;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .topnavbar a:not(:first-child) {
+        display: none;
+    }
+    .topnavbar a.icon {
+        float: right;
+        display: block;
+    }
+    .topnavbar.responsive {
+        position: relative;
+    }
+    .topnavbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnavbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        text-align: left;
+    }
+    .header h1 {
+        font-size: 6vw;
+    }
+    .header p {
+        font-size: 5vw;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    table {
+        width: 100%;
+    }
+    input[type=search] {
+        width: 100%;
+    }
+    button[type=submit] {
+        width: 100%;
+    }
+    .row-single {
+        width: 100%;
+    }
+    .row {
+        width: 100%;
+    }
+    .column-question {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .card-names {
+        text-align: center;
+        margin: 4px;
+    }
+    .card-visit {
+        text-align: center;
+        margin: 4px;
+    }
+    .selectsearch select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .container {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main {
+        margin: 10px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .main-landing {
+        padding-top: 5px;
+        padding-bottom: 50px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+    .imgresponsive {
+        width: 100%;
+        height: auto;
+    }
+    
+    .profileimg {
+        width: 150px;
+        height: 150px;
+    }
+    .profileimgpat {
+        width: 200px;
+        height: 200px;
+    }
+    .containerlogin {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    .container-patient {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .card-visit {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-names {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Responsive layout - when the screen is more than 601px wide ********************************************************/
+
+@media screen and (min-width: 601px) {
+    .header h1 {
+        font-size: 4vw;
+    }
+    .header p {
+        font-size: 2vw;
+    }
+    .column {
+        width: 25%;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .column-card {
+        float: center;
+        width: 25%;
+        padding: 0 10px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    table {
+        width: 100%;
+    }
+    input[type=search] {
+        width: 25%;
+    }
+    button[type=submit] {
+        width: 30%;
+    }
+    .row {
+        width: 100%;
+    }
+    .row-single {
+        width: 80%;
+    }
+    .selectsearch select {
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 80%;
+    }
+    .main {
+        margin: 10px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .main-landing {
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+    .imgresponsive {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-names {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .profileimg {
+        width: 150px;
+        height: 150px;
+    }
+    .profileimgpat {
+        width: 200px;
+        height: 200px;
+    }
+    .containerlogin {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 100%;
+    }
+    .container-patient {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 800px;
+    }
+    .card-visit {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header h1 {
+        font-size: 2vw;
+    }
+    .header p {
+        font-size: 1vw;
+    }
+    .main-landing {
+        padding-top: 10px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
+        
+        
+    }
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 80%;
+    }
+    .header h1 {
+        font-size: 3vw;
+    }
+    .header p {
+        font-size: 2vw;
+    }
+    .profileimg {
+        width: 250px;
+        height: 250px;
+    }
+    .profileimgpat {
+        width: 250px;
+        height: 250px;
+    }
+    .imgresponsive {
+        width: 600px;
+        height: 400px;
+        
+    }
+    .containerlogin {
+        padding-top: 50px;
+        max-width: 800px;
+    }
+    .container-patient {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 800px;
+    }
+    .card-visit {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-names {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
